@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Review System</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    
+  <div class="container">
+    <!-- LEFT: Review Form -->
+    <div class="review-form">
+      <h2>Submit a Review</h2>
+      <div class="form-group">
+        <label for="username">Username *</label>
+        <input type="text" id="username" placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating (1–5) *</label>
+        <select id="rating">
+          <option value="">Select rating</option>
+          <option value="5">5 ★★★★★</option>
+          <option value="4">4 ★★★★☆</option>
+          <option value="3">3 ★★★☆☆</option>
+          <option value="2">2 ★★☆☆☆</option>
+          <option value="1">1 ★☆☆☆☆</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="comment">Comment *</label>
+        <textarea id="comment" placeholder="Write your review..."></textarea>
+      </div>
+
+      <button class="btn-submit" id="submitBtn">Submit Review</button>
+      <div class="message" id="messageBox"></div>
+    </div>
+
+    <!-- RIGHT: Review List -->
+    <div class="review-list">
+      <h2>Reviews</h2>
+      <div class="reviews-container" id="reviewsContainer"></div>
+      <p class="no-reviews" id="noReviewsText">No reviews yet. Be the first to add one!</p>
+    </div>
+  </div>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+</body>
+</html>
